@@ -22,3 +22,12 @@ Route::get('/about', function () {
 });
 
 // Create additional Routes below
+
+Route::get('/feedback', function (){ 
+    return view ('feedback');    
+});
+
+Route::post('/feedback/send', function (){
+    return view ('feedbacksend');
+});
+
