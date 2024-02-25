@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,11 +24,10 @@ Route::get('/about', function () {
 
 // Create additional Routes below
 
-Route::get('/feedback', function (){ 
-    return view ('feedback');    
-});
+Route::get('/feedback', [FeedbackController::class, 'create']); 
+ 
 
-Route::post('/feedback/send', function (){
-    return view ('feedbacksend');
-});
+Route::post('/feedback/send', [FeedbackController::class, 'send']); 
+  
 
+Route::get('/feedback/success', [FeedbackController::class, 'success']);
