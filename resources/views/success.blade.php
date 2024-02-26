@@ -1,14 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="text-center p-5 border border-success rounded position-absolute top-50 start-50 translate-middle">
-        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-check-circle text-success" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-            <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
-        </svg>
-        <h1 class="display-1 text-success fw-bold"> Success!</h1>
-        <br>
-        <p class="text-wrap">Thank you for your feedback. We will review your feedback and get back to you.</p>
-    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card border border-pink rounded" style="background-color: #f8bbd0;">
+                    <div class="card-header text-center" style="background-color: #f06292; color: white; font-family: 'Comic Sans MS', cursive; font-size: 36px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 2.5a5.488 5.488 0 0 0-5.386 5.996l.974.102a4.486 4.486 0 0 1 4.412-4.865V3a1.5 1.5 0 0 1 3 0v1.733a4.486 4.486 0 0 1 4.412 4.865l.974-.102A5.488 5.488 0 0 0 8 2.5zM6 13h-.5a2 2 0 0 1 0-4h1a2 2 0 0 1 0 4H6zm4 0h.5a2 2 0 0 1 0-4h-1a2 2 0 0 1 0 4h.5z"/>
+                        </svg>
+                        Congratulations!
+                    </div>
 
+                    <div class="card-body">
+                        <div class="alert alert-danger text-center" role="alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2.5a5.488 5.488 0 0 0-5.386 5.996l.974.102a4.486 4.486 0 0 1 4.412-4.865V3a1.5 1.5 0 0 1 3 0v1.733a4.486 4.486 0 0 1 4.412 4.865l.974-.102A5.488 5.488 0 0 0 8 2.5zM6 13h-.5a2 2 0 0 1 0-4h1a2 2 0 0 1 0 4H6zm4 0h.5a2 2 0 0 1 0-4h-1a2 2 0 0 1 0 4h.5z"/>
+                            </svg>
+                            <strong style="font-size: 48px; font-weight: bold; font-family: 'Comic Sans MS', cursive;">Yay, Success!</strong>
+                            <p style="font-size: 24px; font-family: 'Comic Sans MS', cursive;">Your feedback has been received. We appreciate your input!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
